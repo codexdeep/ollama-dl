@@ -1,0 +1,23 @@
+# ollama-dl batch manifest
+# Run with: ollama-dl batch models.yaml
+
+out_dir: ./downloaded-models
+
+models:
+  # Basic pull — latest tag
+  - model: llama3:8b
+    auto_install: true
+
+  # Specific quantization, install under a custom name
+  - model: mistral:7b-instruct-v0.2-q5_K_M
+    name: mistral-q5:local
+    auto_install: true
+
+  # Large model — download only, install manually later
+  - model: deepseek-coder-v2:latest
+    auto_install: false
+
+  # From a private/self-hosted OCI registry
+  # - model: myorg/custom-model:v2
+  #   registry: https://my-registry.example.com
+  #   auto_install: true
