@@ -1,6 +1,6 @@
-# ollama-dl v2
+# ollama-dl
 
-An advanced CLI for managing Ollama models — download, inspect, verify, archive, and batch-install.
+An advanced CLI for managing Ollama models - download, inspect, verify, archive, and batch-install.
 
 ---
 
